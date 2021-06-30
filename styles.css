@@ -1,0 +1,95 @@
+@keyframes flash {
+    0% {color: salmon;}
+    50% {color: #FFA98F; background: #333;}
+    100% {color: salmon;}
+}
+
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    background: #333;
+    color: salmon;
+    padding: 40px;
+    font-size: 60px;
+    text-align: center;
+}
+
+.operators {
+    display: flex;
+    justify-content: center
+}
+
+.operators button {
+    color: salmon;
+    background-color: #636363;
+    border: #333 10px solid;
+    width: 170px;
+    height: 170px;
+    font-size: 120px;
+    margin: 50px 25px;
+}
+
+.operators button:active, .submit button:active {
+    border-color: #ffffff;
+}
+
+.answer {
+    display: flex;
+    justify-content: center;
+    height: 170px;
+    width: 100%;
+}
+
+.answer p {
+    color: salmon;
+    font-size: 120px;
+    margin: 18px 49px 0;
+}
+
+#question {
+    border: #333 10px solid;
+    padding: 7px 100px;
+    background: #636363;
+    margin: 0;
+}
+
+.answer input {
+    width: 150px;
+    border: #333 10px solid;
+    background: #636363;
+    padding: 0;
+    color: salmon;
+    font-size: 120px;
+    text-align: center;
+}
+
+::placeholder {
+    color: salmon;
+}
+
+.submit button {
+    border: #333 10px solid;
+    background: #636363;
+    color: salmon;
+    font-size: 40px;
+    padding: 10px 30px;
+}
+
+.submit {
+    text-align: center;
+    margin: 50px
+}
+
+.correct {
+    color: salmon;
+    text-align: center;
+    font-size: 70px;
+    position: absolute;
+    background: #3333;
+    width: 100%;
+    top: 30%;
+    animation: flash 0.5s;
+}
