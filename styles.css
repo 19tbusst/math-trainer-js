@@ -1,6 +1,6 @@
 @keyframes flash {
     0% {color: salmon;}
-    50% {color: #FFA98F; background: #333;}
+    50% {color: #f23333; background: #333;}
     100% {color: salmon;}
 }
 
@@ -9,12 +9,35 @@
     font-family: sans-serif;
 }
 
+body {
+    background-image: url(./img/pattern.png);
+}
+
+main {
+    height: 675px;
+}
+
 header {
     background: #333;
     color: salmon;
     padding: 40px;
     font-size: 60px;
     text-align: center;
+}
+
+footer {
+    background-color: #333;
+    padding: 15px 10px;
+    text-align: right;
+}
+
+footer a {
+    text-decoration: none;
+    color: salmon;
+}
+
+footer a:hover {
+    color: #FFA98F;;
 }
 
 .operators {
